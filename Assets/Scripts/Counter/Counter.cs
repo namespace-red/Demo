@@ -1,15 +1,15 @@
+using System;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class Counter : MonoBehaviour
 {
     [SerializeField] private float _cycleTime;
 
     private int _count;
-    private bool _isRunning;
+    private Coroutine _activeCoroutine;
 
-    public UnityAction<int> Changed;
+    public event Action<int> Changed;
 
     private int Count
     {
@@ -20,21 +20,43 @@ public class Counter : MonoBehaviour
             Changed?.Invoke(_count);
         }
     }
-    
-    void Update()
+
+    private void Update()
     {
         if (Input.GetMouseButtonDown(0) == false)
             return;
 
-        _isRunning = !_isRunning;
-        StartCoroutine(StartChanging());
+        if (_activeCoroutine == null)
+        {
+            Restart();
+        }
+        else
+        {
+            Stop();
+        }
     }
 
-    private IEnumerator StartChanging()
+    private void Restart()
+    {
+        Stop();
+        
+        _activeCoroutine = StartCoroutine(RunChanging());
+    }
+
+    private void Stop()
+    {
+        if (_activeCoroutine == null)
+            return;
+        
+        StopCoroutine(_activeCoroutine);
+        _activeCoroutine = null;
+    }
+    
+    private IEnumerator RunChanging()
     {
         var wait = new WaitForSeconds(_cycleTime);
 
-        while (_isRunning)
+        while (enabled)
         {
             Count++;
             yield return wait;
