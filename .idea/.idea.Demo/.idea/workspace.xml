@@ -20,17 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fdde1d72-f064-4eaf-9aad-e5bf677d73fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Demo/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Demo/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Demo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cube.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Cube.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cube Explosions.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cube Explosions/Cube.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cube Explosions/Cube.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cube Explosions/CubeFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cube Explosions/CubeFactory.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cube Explosions/CubeSpawner.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cube Explosions/CubeSpawner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CubeExplosions/Cube.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CubeExplosions/Cube.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CubeExplosions/CubeFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CubeExplosions/CubeFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CubeExplosions/CubeSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CubeExplosions/CubeSpawner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +49,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Cube Explosions/CubeSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cube Explosions/CubeFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cube Explosions/Cube.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CubeExplosions/Cube.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CubeExplosions/CubeFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CubeExplosions/CubeSpawner.cs" />
       </list>
     </option>
   </component>
@@ -79,7 +76,9 @@
       <workItem from="1729337050444" duration="35000" />
       <workItem from="1729534680407" duration="9754000" />
       <workItem from="1729623987043" duration="5214000" />
-      <workItem from="1729668451186" duration="20647000" />
+      <workItem from="1729668451186" duration="21350000" />
+      <workItem from="1729713414896" duration="1605000" />
+      <workItem from="1729750594034" duration="2964000" />
     </task>
     <servers />
   </component>
@@ -96,6 +95,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

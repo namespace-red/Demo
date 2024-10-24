@@ -14,29 +14,28 @@ public class Cube : MonoBehaviour
     
     public float SplitChance { get; private set; }
     public Rigidbody Rigidbody { get; private set; }
-    
 
     private void Awake()
     {
         _material = GetComponent<Renderer>().material;
         Rigidbody = GetComponent<Rigidbody>();
     }
-    
+
+    private void OnMouseUpAsButton()
+    {
+        TryToSplit();
+    }
+
     public void Init(Vector3 scale, Color color, float splitChance)
     {
         transform.localScale = scale;
         _material.color = color;
         SplitChance = splitChance;
     }
-    
-    private void OnMouseUpAsButton()
-    {
-        TryToSplit();
-    }
 
     private void TryToSplit()
     {
-        float chance = Random.Range(MinSplitChance, MaxSplitChance);
+        float chance = Random.Range(MinSplitChance, MaxSplitChance + 1);
 
         if (chance <= SplitChance)
         {
